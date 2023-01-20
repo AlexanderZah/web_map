@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_70c5604094aae15bce83e70126c321c1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_70c5604094aae15bce83e70126c321c1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_70c5604094aae15bce83e70126c321c1 = L.map(
+                "map_70c5604094aae15bce83e70126c321c1",
+                {
+                    center: [56.2927, 44.002],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f2b175d168f71c6e4074ac1a3da154f5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_70c5604094aae15bce83e70126c321c1);
+        
+    
+            var feature_group_df4a62e1f26b370c7321db05f1707176 = L.featureGroup(
+                {}
+            ).addTo(map_70c5604094aae15bce83e70126c321c1);
+        
+    
+            var marker_99a9dba310676674de2ca8b1f784009e = L.marker(
+                [56.3312128, 44.0094863],
+                {}
+            ).addTo(feature_group_df4a62e1f26b370c7321db05f1707176);
+        
+    
+            var icon_45d943c5f2d64d4b41a5bac53d266d3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_99a9dba310676674de2ca8b1f784009e.setIcon(icon_45d943c5f2d64d4b41a5bac53d266d3c);
+        
+    
+        var popup_35c617b4f1e112a581c92929bff73e68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd4fedfc0c4cab5093e8efb558adc198 = $(`<div id="html_cd4fedfc0c4cab5093e8efb558adc198" style="width: 100.0%; height: 100.0%;">Чкаловская лестница – архитектурная    достопримечательность Нижнего Новгорода.</div>`)[0];
+                popup_35c617b4f1e112a581c92929bff73e68.setContent(html_cd4fedfc0c4cab5093e8efb558adc198);
+            
+        
+
+        marker_99a9dba310676674de2ca8b1f784009e.bindPopup(popup_35c617b4f1e112a581c92929bff73e68)
+        ;
+
+        
+    
+    
+            marker_99a9dba310676674de2ca8b1f784009e.bindTooltip(
+                `<div>
+                     Чкаловская лестница
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb742b7fafd41641f9f0a49ab2f1e6eb = L.marker(
+                [56.3272013, 44.0027067],
+                {}
+            ).addTo(feature_group_df4a62e1f26b370c7321db05f1707176);
+        
+    
+            var icon_d38dc4ef0f6b5c72ced3b77e57e2ba09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb742b7fafd41641f9f0a49ab2f1e6eb.setIcon(icon_d38dc4ef0f6b5c72ced3b77e57e2ba09);
+        
+    
+        var popup_e5dc89abeb649bb1e7fab7d9de357ee5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5c6491e8467c078e768d3172be2de40 = $(`<div id="html_e5c6491e8467c078e768d3172be2de40" style="width: 100.0%; height: 100.0%;">Нижегородский кремль – древняя крепость и одновременно    главная историческая достопримечательность Нижнего Новгорода</div>`)[0];
+                popup_e5dc89abeb649bb1e7fab7d9de357ee5.setContent(html_e5c6491e8467c078e768d3172be2de40);
+            
+        
+
+        marker_cb742b7fafd41641f9f0a49ab2f1e6eb.bindPopup(popup_e5dc89abeb649bb1e7fab7d9de357ee5)
+        ;
+
+        
+    
+    
+            marker_cb742b7fafd41641f9f0a49ab2f1e6eb.bindTooltip(
+                `<div>
+                     Нижегородский кремль
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_440af3e8fe829dc70e46abc5c6ba6160 = L.marker(
+                [56.3283203, 43.9612056],
+                {}
+            ).addTo(feature_group_df4a62e1f26b370c7321db05f1707176);
+        
+    
+            var icon_c6f3232c80242424fe3e497805714750 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_440af3e8fe829dc70e46abc5c6ba6160.setIcon(icon_c6f3232c80242424fe3e497805714750);
+        
+    
+        var popup_3d620023eeaeb49e753496de086e95ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_823cee621cccf7c128225642b197cc19 = $(`<div id="html_823cee621cccf7c128225642b197cc19" style="width: 100.0%; height: 100.0%;">Нижегородская ярмарка — современный выставочный комплекс    и один из популярных брендов Нижнего Новгорода.</div>`)[0];
+                popup_3d620023eeaeb49e753496de086e95ba.setContent(html_823cee621cccf7c128225642b197cc19);
+            
+        
+
+        marker_440af3e8fe829dc70e46abc5c6ba6160.bindPopup(popup_3d620023eeaeb49e753496de086e95ba)
+        ;
+
+        
+    
+    
+            marker_440af3e8fe829dc70e46abc5c6ba6160.bindTooltip(
+                `<div>
+                     Нижегородская ярмарка
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67970852f46d62c05feb422dd554f18e = L.marker(
+                [56.3230103, 43.9767375],
+                {}
+            ).addTo(feature_group_df4a62e1f26b370c7321db05f1707176);
+        
+    
+            var icon_e129b9d5c093d972a9239d18c40901f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67970852f46d62c05feb422dd554f18e.setIcon(icon_e129b9d5c093d972a9239d18c40901f2);
+        
+    
+        var popup_42e4daa8b2bf0f4fee0df6db7e1230c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66cc52cfd9fbba823a7fc741543613d9 = $(`<div id="html_66cc52cfd9fbba823a7fc741543613d9" style="width: 100.0%; height: 100.0%;">Благовещенский монастырь — древнейшая обитель             в Нижнем Новгороде, основанная в 1221 году.</div>`)[0];
+                popup_42e4daa8b2bf0f4fee0df6db7e1230c5.setContent(html_66cc52cfd9fbba823a7fc741543613d9);
+            
+        
+
+        marker_67970852f46d62c05feb422dd554f18e.bindPopup(popup_42e4daa8b2bf0f4fee0df6db7e1230c5)
+        ;
+
+        
+    
+    
+            marker_67970852f46d62c05feb422dd554f18e.bindTooltip(
+                `<div>
+                     Благовещенский монастырь
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5131d80142e6c12c18bd124b98f7c6fc = L.marker(
+                [56.3110529, 43.9879634],
+                {}
+            ).addTo(feature_group_df4a62e1f26b370c7321db05f1707176);
+        
+    
+            var icon_eceb652fc88ecc42d9d908dff4488678 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5131d80142e6c12c18bd124b98f7c6fc.setIcon(icon_eceb652fc88ecc42d9d908dff4488678);
+        
+    
+        var popup_03262b5a4ca9b52beeb9a69a3f6737ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f37e6dcecafcf34e8d3406fd451bc54e = $(`<div id="html_f37e6dcecafcf34e8d3406fd451bc54e" style="width: 100.0%; height: 100.0%;">Большая Покровская улица –             одна из главных и самых старых улиц Нижнего Новгорода.</div>`)[0];
+                popup_03262b5a4ca9b52beeb9a69a3f6737ff.setContent(html_f37e6dcecafcf34e8d3406fd451bc54e);
+            
+        
+
+        marker_5131d80142e6c12c18bd124b98f7c6fc.bindPopup(popup_03262b5a4ca9b52beeb9a69a3f6737ff)
+        ;
+
+        
+    
+    
+            marker_5131d80142e6c12c18bd124b98f7c6fc.bindTooltip(
+                `<div>
+                     Большая Покровская улица
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_e6fb6fab5e5ffaa09cb59f901e2e298c = L.featureGroup(
+                {}
+            ).addTo(map_70c5604094aae15bce83e70126c321c1);
+        
+    
+            var marker_5ccbd78ec13507c1e47c3341e26e5036 = L.marker(
+                [56.26657, 44.02483],
+                {}
+            ).addTo(feature_group_e6fb6fab5e5ffaa09cb59f901e2e298c);
+        
+    
+            var icon_1ac51ca9cece6e1cfa838d5c63a0ace6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-bold", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_5ccbd78ec13507c1e47c3341e26e5036.setIcon(icon_1ac51ca9cece6e1cfa838d5c63a0ace6);
+        
+    
+        var popup_7a51fe0a64feaeeae4db9e733645b1ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d856044f3aa3b9f2331f3aad78fa9e99 = $(`<div id="html_d856044f3aa3b9f2331f3aad78fa9e99" style="width: 100.0%; height: 100.0%;">Офис Сбер</div>`)[0];
+                popup_7a51fe0a64feaeeae4db9e733645b1ef.setContent(html_d856044f3aa3b9f2331f3aad78fa9e99);
+            
+        
+
+        marker_5ccbd78ec13507c1e47c3341e26e5036.bindPopup(popup_7a51fe0a64feaeeae4db9e733645b1ef)
+        ;
+
+        
+    
+    
+            marker_5ccbd78ec13507c1e47c3341e26e5036.bindTooltip(
+                `<div>
+                     Офис Сбер
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f81569606655fbf60a074a720430d732 = L.marker(
+                [56.27908, 43.95141],
+                {}
+            ).addTo(feature_group_e6fb6fab5e5ffaa09cb59f901e2e298c);
+        
+    
+            var icon_514b4d50ffb7b1c33b84fa7bd820c76b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-bold", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_f81569606655fbf60a074a720430d732.setIcon(icon_514b4d50ffb7b1c33b84fa7bd820c76b);
+        
+    
+        var popup_93d0aab555d099d00ccdc77bfc8706ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0113243c2bad7f1ab6b6bb91a0f27c44 = $(`<div id="html_0113243c2bad7f1ab6b6bb91a0f27c44" style="width: 100.0%; height: 100.0%;">Отделение СберБанка</div>`)[0];
+                popup_93d0aab555d099d00ccdc77bfc8706ef.setContent(html_0113243c2bad7f1ab6b6bb91a0f27c44);
+            
+        
+
+        marker_f81569606655fbf60a074a720430d732.bindPopup(popup_93d0aab555d099d00ccdc77bfc8706ef)
+        ;
+
+        
+    
+    
+            marker_f81569606655fbf60a074a720430d732.bindTooltip(
+                `<div>
+                     Отделение СберБанка
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2759ef03015ee24f74e215bb519e0fe2 = L.marker(
+                [56.30731, 43.93684],
+                {}
+            ).addTo(feature_group_e6fb6fab5e5ffaa09cb59f901e2e298c);
+        
+    
+            var icon_4b9cc202cdc5f11b4789aca57359bb76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-bold", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_2759ef03015ee24f74e215bb519e0fe2.setIcon(icon_4b9cc202cdc5f11b4789aca57359bb76);
+        
+    
+        var popup_c2b7b69a5c498fcecf725a2381a3ceec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5986df08b4b28c56c35b14e53e4eef7 = $(`<div id="html_b5986df08b4b28c56c35b14e53e4eef7" style="width: 100.0%; height: 100.0%;">Отделение СберБанка</div>`)[0];
+                popup_c2b7b69a5c498fcecf725a2381a3ceec.setContent(html_b5986df08b4b28c56c35b14e53e4eef7);
+            
+        
+
+        marker_2759ef03015ee24f74e215bb519e0fe2.bindPopup(popup_c2b7b69a5c498fcecf725a2381a3ceec)
+        ;
+
+        
+    
+    
+            marker_2759ef03015ee24f74e215bb519e0fe2.bindTooltip(
+                `<div>
+                     Отделение СберБанка
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_767c1d8ef7af8f892ecac94de37cebfc = L.marker(
+                [56.32695, 43.95637],
+                {}
+            ).addTo(feature_group_e6fb6fab5e5ffaa09cb59f901e2e298c);
+        
+    
+            var icon_88457ed2ff8f82bd8bb6f2e5861da7a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-bold", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_767c1d8ef7af8f892ecac94de37cebfc.setIcon(icon_88457ed2ff8f82bd8bb6f2e5861da7a6);
+        
+    
+        var popup_fa9f80bf6bb63cf3045599c9e1df32d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d7b12c95de8c0da02aaa8fc5504f6ed = $(`<div id="html_0d7b12c95de8c0da02aaa8fc5504f6ed" style="width: 100.0%; height: 100.0%;">Отделение СберБанка</div>`)[0];
+                popup_fa9f80bf6bb63cf3045599c9e1df32d1.setContent(html_0d7b12c95de8c0da02aaa8fc5504f6ed);
+            
+        
+
+        marker_767c1d8ef7af8f892ecac94de37cebfc.bindPopup(popup_fa9f80bf6bb63cf3045599c9e1df32d1)
+        ;
+
+        
+    
+    
+            marker_767c1d8ef7af8f892ecac94de37cebfc.bindTooltip(
+                `<div>
+                     Отделение СберБанка
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_101bd218bed5753c89bba89314332fcc = L.featureGroup(
+                {}
+            ).addTo(map_70c5604094aae15bce83e70126c321c1);
+        
+    
+            var marker_027b8ff88a08857a89471e8b265768cd = L.marker(
+                [56.2781, 43.97407],
+                {}
+            ).addTo(feature_group_101bd218bed5753c89bba89314332fcc);
+        
+    
+            var icon_fcd00f8b803eb7775bad2853aec28986 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-tree-deciduous", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_027b8ff88a08857a89471e8b265768cd.setIcon(icon_fcd00f8b803eb7775bad2853aec28986);
+        
+    
+        var popup_07f47e7d15fd5188e742eafe6c7073fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3117585582a81af46b552289751bafdb = $(`<div id="html_3117585582a81af46b552289751bafdb" style="width: 100.0%; height: 100.0%;">Парк Швейцария</div>`)[0];
+                popup_07f47e7d15fd5188e742eafe6c7073fe.setContent(html_3117585582a81af46b552289751bafdb);
+            
+        
+
+        marker_027b8ff88a08857a89471e8b265768cd.bindPopup(popup_07f47e7d15fd5188e742eafe6c7073fe)
+        ;
+
+        
+    
+    
+            marker_027b8ff88a08857a89471e8b265768cd.bindTooltip(
+                `<div>
+                     Парк Швейцария
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4956d17e376bc0b0ede24354114f0ae0 = L.marker(
+                [56.26809, 43.91956],
+                {}
+            ).addTo(feature_group_101bd218bed5753c89bba89314332fcc);
+        
+    
+            var icon_6416f1a31bf58d9b76ee5acc0335f928 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-tree-deciduous", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4956d17e376bc0b0ede24354114f0ae0.setIcon(icon_6416f1a31bf58d9b76ee5acc0335f928);
+        
+    
+        var popup_bbf8737befe79d6dbcc0c7af1c2de29f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bb202c460052205c5ff27792fc4c446 = $(`<div id="html_6bb202c460052205c5ff27792fc4c446" style="width: 100.0%; height: 100.0%;">Парк Дубки</div>`)[0];
+                popup_bbf8737befe79d6dbcc0c7af1c2de29f.setContent(html_6bb202c460052205c5ff27792fc4c446);
+            
+        
+
+        marker_4956d17e376bc0b0ede24354114f0ae0.bindPopup(popup_bbf8737befe79d6dbcc0c7af1c2de29f)
+        ;
+
+        
+    
+    
+            marker_4956d17e376bc0b0ede24354114f0ae0.bindTooltip(
+                `<div>
+                     Парк Дубки
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_682e758333931a2e22217dd3af2c797f = L.marker(
+                [56.33862, 43.85742],
+                {}
+            ).addTo(feature_group_101bd218bed5753c89bba89314332fcc);
+        
+    
+            var icon_bf4eab732160e2aab58dc0b853f90d0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-tree-deciduous", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_682e758333931a2e22217dd3af2c797f.setIcon(icon_bf4eab732160e2aab58dc0b853f90d0d);
+        
+    
+        var popup_5ce071be6e8861157f0712abfc4fa27a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c9210f32b84880a2d642a4c383da37e = $(`<div id="html_8c9210f32b84880a2d642a4c383da37e" style="width: 100.0%; height: 100.0%;">Сормовский парк</div>`)[0];
+                popup_5ce071be6e8861157f0712abfc4fa27a.setContent(html_8c9210f32b84880a2d642a4c383da37e);
+            
+        
+
+        marker_682e758333931a2e22217dd3af2c797f.bindPopup(popup_5ce071be6e8861157f0712abfc4fa27a)
+        ;
+
+        
+    
+    
+            marker_682e758333931a2e22217dd3af2c797f.bindTooltip(
+                `<div>
+                     Сормовский парк
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f937a9f2b47ddd75192f1d3e8355525 = L.marker(
+                [56.27, 44.00891],
+                {}
+            ).addTo(feature_group_101bd218bed5753c89bba89314332fcc);
+        
+    
+            var icon_2fa02dc24ddd72b104c16a4572760a10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-tree-deciduous", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1f937a9f2b47ddd75192f1d3e8355525.setIcon(icon_2fa02dc24ddd72b104c16a4572760a10);
+        
+    
+        var popup_caa301ea8f71d53c509648eee75c9f14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69253674f71cc05f7cf968b647f9867b = $(`<div id="html_69253674f71cc05f7cf968b647f9867b" style="width: 100.0%; height: 100.0%;">Щёлоковский хутор</div>`)[0];
+                popup_caa301ea8f71d53c509648eee75c9f14.setContent(html_69253674f71cc05f7cf968b647f9867b);
+            
+        
+
+        marker_1f937a9f2b47ddd75192f1d3e8355525.bindPopup(popup_caa301ea8f71d53c509648eee75c9f14)
+        ;
+
+        
+    
+    
+            marker_1f937a9f2b47ddd75192f1d3e8355525.bindTooltip(
+                `<div>
+                     Щёлоковский хутор
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_a119d2df7f970e6a42b4a29ab8b59bc7 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_70c5604094aae15bce83e70126c321c1);
+        
+    
+            var tile_layer_bb856bfa26629d95a2d260e0650be1da = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_70c5604094aae15bce83e70126c321c1);
+        
+    
+            var tile_layer_df837d7749311c1c9dfd4f06314bce53 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_70c5604094aae15bce83e70126c321c1);
+        
+    
+            var layer_control_f7ad4edd74cf587068cc6c9037e3d6e0 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f2b175d168f71c6e4074ac1a3da154f5,
+                    "cartodbpositron" : tile_layer_a119d2df7f970e6a42b4a29ab8b59bc7,
+                    "cartodbdark_matter" : tile_layer_bb856bfa26629d95a2d260e0650be1da,
+                    "stamentoner" : tile_layer_df837d7749311c1c9dfd4f06314bce53,
+                },
+                overlays :  {
+                    "\u0414\u043e\u0441\u0442\u043e\u043f\u0440\u0438\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438" : feature_group_df4a62e1f26b370c7321db05f1707176,
+                    "\u0421\u0431\u0435\u0440" : feature_group_e6fb6fab5e5ffaa09cb59f901e2e298c,
+                    "\u041f\u0430\u0440\u043a\u0438" : feature_group_101bd218bed5753c89bba89314332fcc,
+                },
+            };
+            L.control.layers(
+                layer_control_f7ad4edd74cf587068cc6c9037e3d6e0.base_layers,
+                layer_control_f7ad4edd74cf587068cc6c9037e3d6e0.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_70c5604094aae15bce83e70126c321c1);
+            tile_layer_a119d2df7f970e6a42b4a29ab8b59bc7.remove();
+            tile_layer_bb856bfa26629d95a2d260e0650be1da.remove();
+            tile_layer_df837d7749311c1c9dfd4f06314bce53.remove();
+        
+    
+            var mouse_position_1a072d8a6af3264aa97b699940fc3b17 = new L.Control.MousePosition(
+                {"emptyString": "NaN", "lngFirst": false, "numDigits": 20, "position": "topright", "prefix": "\u0428\u0438\u0440\u0438\u043d\u0430:", "separator": "\u0414\u043e\u043b\u0433\u043e\u0442\u0430: "}
+            );
+            mouse_position_1a072d8a6af3264aa97b699940fc3b17.options["latFormatter"] =
+                function(num) {return L.Util.formatNum(num, 5);};;
+            mouse_position_1a072d8a6af3264aa97b699940fc3b17.options["lngFormatter"] =
+                function(num) {return L.Util.formatNum(num, 5);};;
+            map_70c5604094aae15bce83e70126c321c1.addControl(mouse_position_1a072d8a6af3264aa97b699940fc3b17);
+        
+    
+                var lat_lng_popup_8dd122700b474f775726a4ac4efa5d5c = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_8dd122700b474f775726a4ac4efa5d5c
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_70c5604094aae15bce83e70126c321c1);
+                    }
+                map_70c5604094aae15bce83e70126c321c1.on('click', latLngPop);
+            
+</script>
+</html>
