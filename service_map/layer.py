@@ -1,19 +1,13 @@
 import folium
+from web_map.models import LayersModel
 
 
-layers = (
-    'Достопримечательности',
-    'Сбер',
-    'Парки'
-)
-
-
-def create_groups_layers(city, layers) -> list:
-    group_layers = []
-
+def create_groups_layers(city) -> dict:
+    group_layers = {}
+    layers = LayersModel.objects.all()
     for lay in layers:
-        layer = folium.FeatureGroup(name=lay)
-        group_layers.append(layer)
+        layer = folium.FeatureGroup(name=lay.name)
+        group_layers[lay.name] = layer
         layer.add_to(city)
     
     return group_layers

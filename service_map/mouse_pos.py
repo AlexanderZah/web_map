@@ -9,7 +9,7 @@ def add_mouse_position(city_nn_map):
         empty_string='NaN',
         lng_first=False,
         num_digits=20,
-        prefix='Lat:',
+        prefix='Шир:',
         lat_formatter=formatter,
         lng_formatter=formatter,
     )
