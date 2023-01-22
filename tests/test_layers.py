@@ -9,6 +9,11 @@ from web_map.models import LayersModel
                                  (folium.Map([00.21, 154.2])),
                                  ])
 def test_create_groups_layers_good(map):
-    layers = list(LayersModel.objects.all())
+    """
+        Количество групп слоев равно количеству слоев в базе данных.
+
+    """
     res = layer.create_groups_layers(map)
-    assert len(res) == len(layers)
+    expected = LayersModel.objects.all().count()
+
+    assert len(res) == expected

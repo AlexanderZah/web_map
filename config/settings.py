@@ -8,11 +8,11 @@ env = environ.Env()
 environ.Env.read_env(env.str(root(), '.env'))
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = env.str('SECRET_KEY') # Вставить свой SECRET_KEY
+SECRET_KEY = env.str('SECRET_KEY')  # Вставить свой SECRET_KEY
 
-DEBUG = env.bool('DEBUG', default=False) # добавить True или False
+DEBUG = env.bool('DEBUG', default=False)  # добавить True или False
 
-ALLOWED_HOSTS = env.str('ALLOWED_HOSTS', default='').split(' ') # вставить свои hosts
+ALLOWED_HOSTS = env.str('ALLOWED_HOSTS', default='').split(' ')  # вставить свои hosts
 
 
 # base
@@ -63,15 +63,12 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-
 
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -90,8 +87,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Europe/Moscow'
@@ -105,8 +100,6 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
-
-
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
