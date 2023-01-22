@@ -1,6 +1,11 @@
 from folium.plugins import MousePosition
 
+
 def add_mouse_position(city_nn_map):
+    """
+        Отображение Широты и долготы позиции мыши справа вверху на карте.
+
+    """
 
     formatter = "function(num) {return L.Util.formatNum(num, 5);};"
     mouse_position = MousePosition(

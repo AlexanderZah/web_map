@@ -1,7 +1,7 @@
 
 from pathlib import Path
 import environ
-
+import os
 
 root = environ.Path(__file__) - 2
 env = environ.Env()
@@ -28,7 +28,7 @@ INSTALLED_APPS = [
 # apps
 INSTALLED_APPS += [
     'web_map',
-    'service_map'
+    'service_map',
 
 ]
 
@@ -101,7 +101,11 @@ USE_I18N = True
 USE_TZ = True
 
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
+MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
+
 
 
 
