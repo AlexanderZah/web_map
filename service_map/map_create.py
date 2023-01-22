@@ -11,6 +11,7 @@ def create_map_to_html():
         Создание карты с координатами Нижнего Новгорода.
         Добавление на карту базовых слоев и опциональных слоев
         с маркерами(элементами на карте).
+
     """
     city_nn_map = folium.Map(
         location=[56.2927, 44.002],    # широта и долгота Нижнего Новгорода
@@ -21,6 +22,8 @@ def create_map_to_html():
 
     )
 
+    # Добавление базовых слоев + добавление опциональных слоев
+    # с маркерами на карту
     groups_layers = create_groups_layers(city_nn_map)
     add_markers_for_layers(groups_layers)
     add_layers(city_nn_map)
@@ -28,7 +31,7 @@ def create_map_to_html():
 
     # Отображение координат курсора
     add_mouse_position(city_nn_map)
-    folium.LatLngPopup().add_to(city_nn_map)  
+    folium.LatLngPopup().add_to(city_nn_map)
 
     # Местоположение пользователя
     LocateControl(

@@ -17,6 +17,8 @@ def add_markers_from_db() -> QuerySet:
 def create_icons_for_markers() -> dict:
     """
         Создание иконок для маркеров.
+        Количество иконок должно быть равно количеству слоев в бд.
+
     """
     icons = {
         'Достопримечательности': ('blue', "glyphicon glyphicon-star", 'glyphicon'),
@@ -30,6 +32,7 @@ def create_icons_for_markers() -> dict:
 def add_markers_for_layers(layers: dict) -> None:
     """
         Создания маркера и прикрепление его к опциональному слою на карте.
+        
     """
     markers = add_markers_from_db()
 
