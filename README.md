@@ -29,7 +29,7 @@ virtualenv venv --python=3.10.5 && source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-3) Создать файл .env, добавить SECRET_KEY, ALLOWED_HOSTS, DEBUG.
+3) Создать файл .env , добавить SECRET_KEY, ALLOWED_HOSTS, DEBUG.
 4) Собрать статику.
 ```
 python3 manage.py collectstatic
