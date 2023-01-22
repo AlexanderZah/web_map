@@ -5,6 +5,7 @@ from web_map.models import LayersModel
 def create_groups_layers(map: folium.Map) -> dict:
     """
         Создание групп для объединия маркеров.
+        И добавление их к карте.
 
     """
     group_layers = {}
@@ -20,7 +21,7 @@ def create_groups_layers(map: folium.Map) -> dict:
 
 def add_layers(map: folium.Map):
     """
-        Добавление к карте базовых слоев.
+        Добавление к карте картографических слоев.
 
     """
 
@@ -40,7 +41,8 @@ def add_layers(map: folium.Map):
     ).add_to(map)
 
     folium.TileLayer(
-        tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+        tiles='https://server.arcgisonline.com/\
+            ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         attr='Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS,\
             AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the\
             GIS User Community',

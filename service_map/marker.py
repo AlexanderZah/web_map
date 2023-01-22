@@ -21,9 +21,18 @@ def create_icons_for_markers() -> dict:
 
     """
     icons = {
-        'Достопримечательности': ('blue', "glyphicon glyphicon-star", 'glyphicon'),
-        'Сбер': ('lightgreen', "fa-solid fa-ruble-sign", 'fa'),
-        'Парки': ('green', 'glyphicon glyphicon-tree-deciduous', 'glyphicon'),
+        'Достопримечательности': (
+            'blue',
+            "glyphicon glyphicon-star",
+            'glyphicon'),
+        'Сбер': (
+            'lightgreen',
+            "fa-solid fa-ruble-sign",
+            'fa'),
+        'Парки': (
+            'green',
+            'glyphicon glyphicon-tree-deciduous',
+            'glyphicon'),
     }
 
     return icons
@@ -32,7 +41,7 @@ def create_icons_for_markers() -> dict:
 def add_markers_for_layers(layers: dict) -> None:
     """
         Создания маркера и прикрепление его к опциональному слою на карте.
-        
+
     """
     markers = add_markers_from_db()
 
